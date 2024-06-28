@@ -1,0 +1,8 @@
+name: Banks
+version: '${project.version}'
+main: test.developer.banks.Banks
+api-version: '1.16'
+commands:
+  bank:
+    description: Bank commands
+    usage: /<command>

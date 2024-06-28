@@ -1,0 +1,35 @@
+database:
+  type: sqlite # sqlite или mysql
+  mysql:
+    host: localhost
+    port: 3306
+    database: minecraft
+    username: root
+    password: password
+
+messages:
+  gui_name: "Банк"
+  welcome: "Добро пожаловать в банк!"
+  insufficient_funds: "Недостаточно средств!"
+  deposit_prompt: "Введите сумму для депозита."
+  deposit_success: "Вы успешно вложили %s монет в банк!"
+  withdrawal_prompt: "Введите сумму котроую вы хотите снять."
+  withdrawal_success: "Вы успешно сняли %s монет из банка!"
+  daily_interest: "Ваш вклад увеличился на %s монет."
+  current_balance: "Ваш баланс: %s."
+  interest_info: "Завтра вы сможете получить %s монет."
+  invalid_amount: "Не валидный ввод"
+  bank_help_command: "Bank commands:\n /bank - open bank\n /bank create - create a bank account\n /bank help - show this help message"
+  invalid_command_message: "Invalid command. Use /bank help for a list of commands."
+  no_bank_message: "У вас нет банка, создайте с помощью /bank create"
+  already_has_account: "У вас уже есть банк, откройте с помощью /bank"
+items:
+  deposit:
+    name: "Положить деньги"
+    slot: 11
+  withdraw:
+    name: "Снять деньги"
+    slot: 15
+  profile:
+    name: "Профиль"
+    slot: 13
